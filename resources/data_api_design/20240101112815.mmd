@@ -1,0 +1,43 @@
+classDiagram
+    class App {
+        +Express app
+        +SocketIO io
+        +initialize() void
+    }
+    class Server {
+        +httpServer server
+        +start() void
+    }
+    class Client {
+        +React component
+        +render() void
+    }
+    class Game {
+        +String id
+        +Array players
+        +Map leaderboard
+        +initGame() void
+        +updateLeaderboard() void
+    }
+    class Question {
+        +String text
+        +Array choices
+        +String answer
+        +getQuestion(difficulty: String) Question
+    }
+    class GameSession {
+        +String sessionID
+        +Array playerScores
+        +getCurrentLeaderboard() Map
+    }
+    class GameController {
+        +startNewGame() String
+        +getQuestion() Question
+        +updateScore(playerID: String, score: Number) void
+    }
+    App --> Server
+    Server --> Client
+    Client --> Game
+    Game --> Question
+    Game --> GameSession
+    GameController --> GameSession

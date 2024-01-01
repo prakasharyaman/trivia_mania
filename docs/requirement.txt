@@ -1,0 +1,1 @@
+Create a browser based trivia game in which many people can join using link given to them.

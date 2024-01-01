@@ -1,0 +1,21 @@
+sequenceDiagram
+    participant C as Client
+    participant A as App
+    participant S as Server
+    participant GC as GameController
+    participant G as Game
+    participant Q as Question
+    participant GS as GameSession
+    C->>A: Initialize App
+    A->>S: Start Server
+    S->>C: Serve Client
+    C->>GC: startNewGame()
+    GC->>G: initGame()
+    G->>Q: getQuestion(difficulty)
+    Q-->>G: return Question
+    G->>GS: create GameSession
+    GS-->>G: return sessionID
+    C->>GC: updateScore(playerID, score)
+    GC->>GS: updateScore(playerID, score)
+    GS-->>GC: return updated leaderboard
+    GC-->>C: return updated leaderboard
