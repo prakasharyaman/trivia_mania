@@ -1,4 +1,4 @@
-## server/models/GameSession.js
+// server/models/GameSession.js
 const mongoose = require('mongoose');
 
 // Define the schema for a game session

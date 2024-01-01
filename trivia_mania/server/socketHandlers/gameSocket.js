@@ -1,4 +1,4 @@
-## server/socketHandlers/gameSocket.js
+// server/socketHandlers/gameSocket.js
 const GameSession = require('../models/GameSession');
 
 class GameSocketHandler {

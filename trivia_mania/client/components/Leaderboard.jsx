@@ -1,4 +1,4 @@
-## client/components/Leaderboard.jsx
+// client/components/Leaderboard.jsx
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 

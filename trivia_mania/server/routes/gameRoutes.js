@@ -1,4 +1,4 @@
-## server/routes/gameRoutes.js
+// server/routes/gameRoutes.js
 const express = require('express');
 const gameController = require('../controllers/gameController');
 

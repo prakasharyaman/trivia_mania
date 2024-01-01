@@ -1,4 +1,4 @@
-## client/components/Question.jsx
+// client/components/Question.jsx
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import socketIOClient from 'socket.io-client';
